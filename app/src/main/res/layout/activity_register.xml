@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Register">
+
+    <TextView
+        android:id="@+id/reg_tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/yellow"
+        android:padding="5dp"
+        android:text="Register Here"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="@color/colorPrimary"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:padding="20dp">
+
+    <EditText
+        android:id="@+id/reg_et_name"
+        style="@style/RegEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/reg_tv_title"
+        android:hint="Enter your name"
+        />
+
+    <EditText
+        android:id="@+id/reg_et_phone"
+        style="@style/RegEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/reg_et_name"
+        android:hint="Enter your Phone number"
+        />
+
+    <EditText
+        android:id="@+id/reg_et_salary"
+        style="@style/RegEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/reg_et_phone"
+        android:hint="Enter your Salary"
+        />
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/reg_btn_register"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="10dp"
+        android:text="Register"
+        android:background="@color/yellow"/>
+
+</RelativeLayout>
